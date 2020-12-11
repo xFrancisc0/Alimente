@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Alimente</string>
+    <string name="registro">¿No tienes cuenta?.</string>
+    <string name="registraaqui"> Crea una aqui</string>
+    <string name="logo">Alimente</string>
+    <string name="login">login</string>
+    <string name="by">by</string>
+    <string name="grupo">Grupo CMB</string>
+    <string name="nombre_nota">%1$s</string>
+</resources>

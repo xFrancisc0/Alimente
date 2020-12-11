@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".views.LoginActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            ><!--weightSum se utiliza para dar un peso, un valor
+           permitiendo asi asignar a otros elementos poercentajes -->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logo"
+                    android:textColorHint="@color/blanco"
+                    android:textColor="@color/blanco"
+                    android:textStyle="bold"
+                    android:textSize="40dp"
+                    android:layout_centerInParent="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_margin="40dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textRut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RUT"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+                    <EditText
+                        android:id="@+id/editRut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="11111111-1"
+                        android:digits="1234567890-k"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textContra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contraseña"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+
+                    <EditText
+                        android:id="@+id/editContra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="*******************"
+                        android:inputType="textPassword"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="?android:attr/listDivider" />
+
+
+                    <Button
+                        android:id="@+id/btnIngreso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark"
+                        android:elevation="10dp"
+                        android:text="Ingresar"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="199dp"
+                        android:gravity="center"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/registro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/registro"
+                            android:textColor="@color/blanco"
+                            android:textColorHint="@color/blanco"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/btnRegistro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/registro"
+
+                            android:text="@string/registraaqui"
+                            android:textColor="@color/blanco"
+                            android:textColorHint="@color/blanco"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
